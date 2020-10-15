@@ -1,0 +1,476 @@
+➜  exercice-commit git init
+Initialized empty Git repository in /Users/romain/Desktop/exercice-commit/.git/
+➜  exercice-commit git:(master) ✗ tree .git
+.git
+├── HEAD
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── fsmonitor-watchman.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-merge-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── pre-receive.sample
+│   ├── prepare-commit-msg.sample
+│   └── update.sample
+├── info
+│   └── exclude
+├── objects
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    └── tags
+
+8 directories, 16 files
+➜  exercice-commit git:(master) ✗ git add contact.yaml 
+➜  exercice-commit git:(master) ✗ tree .git           
+.git
+├── HEAD
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── fsmonitor-watchman.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-merge-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── pre-receive.sample
+│   ├── prepare-commit-msg.sample
+│   └── update.sample
+├── index
+├── info
+│   └── exclude
+├── objects
+│   ├── 7f
+│   │   └── 71ffe10892a53d5b42bef4b31016c56e7ad958
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    └── tags
+
+9 directories, 18 files
+➜  exercice-commit git:(master) ✗ git commit -m "chore: initial commit"
+[master (root-commit) 169e3d0] chore: initial commit
+ 1 file changed, 4 insertions(+)
+ create mode 100644 contact.yaml
+➜  exercice-commit git:(master) tree .git                            
+.git
+├── COMMIT_EDITMSG
+├── HEAD
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── fsmonitor-watchman.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-merge-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── pre-receive.sample
+│   ├── prepare-commit-msg.sample
+│   └── update.sample
+├── index
+├── info
+│   └── exclude
+├── logs
+│   ├── HEAD
+│   └── refs
+│       └── heads
+│           └── master
+├── objects
+│   ├── 16
+│   │   └── 9e3d092eeb94292970603de582d29c2ffbc256
+│   ├── 7f
+│   │   └── 71ffe10892a53d5b42bef4b31016c56e7ad958
+│   ├── 88
+│   │   └── 5f6b538f79a16ca6039228963ba59a756e99be
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    │   └── master
+    └── tags
+
+14 directories, 24 files
+➜  exercice-commit git:(master) git add voiture.yaml 
+➜  exercice-commit git:(master) ✗ git commit -m "feat: voiture.yaml"
+[master 901e13b] feat: voiture.yaml
+ 1 file changed, 3 insertions(+)
+ create mode 100644 voiture.yaml
+➜  exercice-commit git:(master) ✗ git add societe.yaml 
+➜  exercice-commit git:(master) ✗ git commit -m "feat: societe.yaml"
+[master 737ad81] feat: societe.yaml
+ 1 file changed, 3 insertions(+)
+ create mode 100644 societe.yaml
+➜  exercice-commit git:(master) git add -p contact.yaml 
+diff --git a/contact.yaml b/contact.yaml
+index 7f71ffe..1e067cb 100644
+--- a/contact.yaml
++++ b/contact.yaml
+@@ -1,4 +1,4 @@
+ contact:
+-  prenom: Jean
++  prenom: Eric
+   nom: Dupont
+-  ville: Paris
++  ville: Bordeaux
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? e
+
+➜  exercice-commit git:(master) ✗ git diff --cached
+diff --git a/contact.yaml b/contact.yaml
+index 7f71ffe..7d81567 100644
+--- a/contact.yaml
++++ b/contact.yaml
+@@ -1,4 +1,4 @@
+ contact:
+-  prenom: Jean
++  prenom: Eric
+   nom: Dupont
+   ville: Paris
+➜  exercice-commit git:(master) ✗ git diff         
+diff --git a/contact.yaml b/contact.yaml
+index 7d81567..1e067cb 100644
+--- a/contact.yaml
++++ b/contact.yaml
+@@ -1,4 +1,4 @@
+ contact:
+   prenom: Eric
+   nom: Dupont
+-  ville: Paris
++  ville: Bordeaux
+➜  exercice-commit git:(master) ✗ git commit -m "fix: prenom in contact.yaml"
+[master e637b72] fix: prenom in contact.yaml
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  exercice-commit git:(master) ✗ git add contact.yaml 
+➜  exercice-commit git:(master) ✗ git reset HEAD^    
+Unstaged changes after reset:
+M       contact.yaml
+➜  exercice-commit git:(master) ✗ git add -p contact.yaml 
+diff --git a/contact.yaml b/contact.yaml
+index 7f71ffe..1e067cb 100644
+--- a/contact.yaml
++++ b/contact.yaml
+@@ -1,4 +1,4 @@
+ contact:
+-  prenom: Jean
++  prenom: Eric
+   nom: Dupont
+-  ville: Paris
++  ville: Bordeaux
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? s
+Split into 2 hunks.
+@@ -1,3 +1,3 @@
+ contact:
+-  prenom: Jean
++  prenom: Eric
+   nom: Dupont
+(1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? y
+@@ -3,2 +3,2 @@
+   nom: Dupont
+-  ville: Paris
++  ville: Bordeaux
+(2/2) Stage this hunk [y,n,q,a,d,K,g,/,e,?]? n
+
+➜  exercice-commit git:(master) ✗ git commit -m "fix: prenom in contact.yaml"
+[master 69f9302] fix: prenom in contact.yaml
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  exercice-commit git:(master) ✗ git add .
+➜  exercice-commit git:(master) ✗ git commit -m "fix: ville in contact.yaml"
+[master 2c4f052] fix: ville in contact.yaml
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  exercice-commit git:(master) git mv *.yaml yaml/ 
+➜  exercice-commit git:(master) ✗ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    contact.yaml -> yaml/contact.yaml
+        renamed:    societe.yaml -> yaml/societe.yaml
+        renamed:    voiture.yaml -> yaml/voiture.yaml
+
+➜  exercice-commit git:(master) ✗ git commit -m "refactor: move yaml files to yaml folder"
+[master d846fae] refactor: move yaml files to yaml folder
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename contact.yaml => yaml/contact.yaml (100%)
+ rename societe.yaml => yaml/societe.yaml (100%)
+ rename voiture.yaml => yaml/voiture.yaml (100%)
+➜  exercice-commit git:(master) git commit --amend 
+[master 6eef858] refactor: move yaml files to yaml directory
+ Date: Thu Oct 15 15:33:56 2020 +0200
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename contact.yaml => yaml/contact.yaml (100%)
+ rename societe.yaml => yaml/societe.yaml (100%)
+ rename voiture.yaml => yaml/voiture.yaml (100%)
+➜  exercice-commit git:(master) git mv yaml/*.yaml feat/                           fatal: destination 'feat/' is not a directory
+➜  exercice-commit git:(master) git mv yaml/*.yaml feat/
+➜  exercice-commit git:(master) ✗ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    yaml/contact.yaml -> feat/contact.yaml
+        renamed:    yaml/societe.yaml -> feat/societe.yaml
+        renamed:    yaml/voiture.yaml -> feat/voiture.yaml
+
+➜  exercice-commit git:(master) ✗ git commit --amend                               [master d4261d6] refactor: move yaml files to yaml directory
+ Date: Thu Oct 15 15:33:56 2020 +0200
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename contact.yaml => feat/contact.yaml (100%)
+ rename societe.yaml => feat/societe.yaml (100%)
+ rename voiture.yaml => feat/voiture.yaml (100%)
+➜  exercice-commit git:(master) git mv feat/*.yaml yaml/
+➜  exercice-commit git:(master) ✗ git commit --amend      
+[master 6620d27] refactor: move yaml files to yaml directory
+ Date: Thu Oct 15 15:33:56 2020 +0200
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ rename contact.yaml => yaml/contact.yaml (100%)
+ rename societe.yaml => yaml/societe.yaml (100%)
+ rename voiture.yaml => yaml/voiture.yaml (100%)
+➜  exercice-commit git:(master) git add -p yaml/contact.yaml
+diff --git a/yaml/contact.yaml b/yaml/contact.yaml
+index 1e067cb..f13e868 100644
+--- a/yaml/contact.yaml
++++ b/yaml/contact.yaml
+@@ -1,4 +1,4 @@
+ contact:
+-  prenom: Eric
++  prenom: Romain
+   nom: Dupont
+-  ville: Bordeaux
++  ville: Paris
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? ?
+y - stage this hunk
+n - do not stage this hunk
+q - quit; do not stage this hunk or any of the remaining ones
+a - stage this hunk and all later hunks in the file
+d - do not stage this hunk or any of the later hunks in the file
+s - split the current hunk into smaller hunks
+e - manually edit the current hunk
+? - print help
+@@ -1,4 +1,4 @@
+ contact:
+-  prenom: Eric
++  prenom: Romain
+   nom: Dupont
+-  ville: Bordeaux
++  ville: Paris
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? s
+Split into 2 hunks.
+@@ -1,3 +1,3 @@
+ contact:
+-  prenom: Eric
++  prenom: Romain
+   nom: Dupont
+(1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? y
+@@ -3,2 +3,2 @@
+   nom: Dupont
+-  ville: Bordeaux
++  ville: Paris
+(2/2) Stage this hunk [y,n,q,a,d,K,g,/,e,?]? n
+
+➜  exercice-commit git:(master) ✗ 
+➜  exercice-commit git:(master) 
+➜  exercice-commit git:(master) 
+➜  exercice-commit git:(master) git lg
+* 6620d27 - (HEAD -> master) refactor: move yaml files to yaml directory (10 minutes ago) <Romain Bohdanowicz>
+* 2c4f052 - fix: ville in contact.yaml (16 minutes ago) <Romain Bohdanowicz>
+* 69f9302 - fix: prenom in contact.yaml (17 minutes ago) <Romain Bohdanowicz>
+* 737ad81 - feat: societe.yaml (19 minutes ago) <Romain Bohdanowicz>
+* 901e13b - feat: voiture.yaml (20 minutes ago) <Romain Bohdanowicz>
+* 169e3d0 - chore: initial commit (21 minutes ago) <Romain Bohdanowicz>%           
+➜  exercice-commit git:(master) git rm yaml/voiture.yaml 
+rm 'yaml/voiture.yaml'
+➜  exercice-commit git:(master) ✗ tree .git                                        .git
+├── COMMIT_EDITMSG
+├── HEAD
+├── ORIG_HEAD
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── fsmonitor-watchman.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-merge-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── pre-receive.sample
+│   ├── prepare-commit-msg.sample
+│   └── update.sample
+├── index
+├── info
+│   └── exclude
+├── logs
+│   ├── HEAD
+│   └── refs
+│       └── heads
+│           └── master
+├── objects
+│   ├── 04
+│   │   └── 45e1b06ee886f9cf16b9282287ed11747d63ba
+│   ├── 16
+│   │   └── 9e3d092eeb94292970603de582d29c2ffbc256
+│   ├── 1b
+│   │   └── 417497ef2a02bb852e01f0380c34306d398a2f
+│   ├── 1e
+│   │   └── 067cb7ade7d73eeef41541e4484caf14670f09
+│   ├── 2c
+│   │   └── 4f052b1bb0168fb157eecae74433626fe862f2
+│   ├── 31
+│   │   └── f7b8e99a0718d31d357754882a8b4b88d12bda
+│   ├── 66
+│   │   └── 20d27130ffceaa6738edc2903552100b8c5ed7
+│   ├── 69
+│   │   └── f9302c3c84aab15645f2ace25a1ff04e3587dd
+│   ├── 6e
+│   │   └── ef8583fdf1e650e44cd2d112aaf01d1e69308b
+│   ├── 73
+│   │   └── 7ad81a4d13489bd6330bdcc425f4adc812a592
+│   ├── 7d
+│   │   └── 81567adc7bdbdef375a1a214723fc19830b938
+│   ├── 7f
+│   │   └── 71ffe10892a53d5b42bef4b31016c56e7ad958
+│   ├── 82
+│   │   └── c014bce4a4e1eb50beb1c08261ef54dc7211b6
+│   ├── 88
+│   │   └── 5f6b538f79a16ca6039228963ba59a756e99be
+│   ├── 90
+│   │   └── 1e13b5b936dc6140b755efa673eade96717368
+│   ├── b0
+│   │   └── 6cf04ba7b539fad6c0f85a17e8b7210129f95b
+│   ├── cc
+│   │   └── a5f76d2f03aaf84279f1b9ecd58568642cc7a6
+│   ├── d4
+│   │   └── 261d6560f3f5f0f038db564918d73304c3ac97
+│   ├── d8
+│   │   └── 46fae8400252cca5268aee70e2ce37775c339c
+│   ├── da
+│   │   └── 8451d4f4c790f408f82ada497e1bdaeaedb503
+│   ├── e2
+│   │   └── 70a15e3489a8e52ce6dfaedae149295f2e09b6
+│   ├── e6
+│   │   └── 37b72c3f9ef23048514cfe4a0d2efb011045e8
+│   ├── ea
+│   │   └── 960c53df67b679a189cf1f616d4b49dc28f70e
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    │   └── master
+    └── tags
+
+34 directories, 45 files
+➜  exercice-commit git:(master) ✗ git reset --hard     
+HEAD is now at 6620d27 refactor: move yaml files to yaml directory
+➜  exercice-commit git:(master) cd ..
+➜  Desktop mkdir test
+➜  Desktop cd test 
+➜  test git init
+Initialized empty Git repository in /Users/romain/Desktop/test/.git/
+➜  test git:(master) code .
+➜  test git:(master) cd ../exercice-commit 
+➜  exercice-commit git:(master) git rm yaml/voiture.yaml 
+rm 'yaml/voiture.yaml'
+➜  exercice-commit git:(master) ✗ git commit -m "BREAKIN..."
+[master 588851b] BREAKIN...
+ 1 file changed, 3 deletions(-)
+ delete mode 100644 yaml/voiture.yaml
+➜  exercice-commit git:(master) git reset HEAD^ --hard
+HEAD is now at 6620d27 refactor: move yaml files to yaml directory
+➜  exercice-commit git:(master) git show HEAD
+commit 6620d27130ffceaa6738edc2903552100b8c5ed7 (HEAD -> master)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Thu Oct 15 15:33:56 2020 +0200
+
+    refactor: move yaml files to yaml directory
+
+diff --git a/contact.yaml b/yaml/contact.yaml
+similarity index 100%
+rename from contact.yaml
+rename to yaml/contact.yaml
+diff --git a/societe.yaml b/yaml/societe.yaml
+similarity index 100%
+rename from societe.yaml
+rename to yaml/societe.yaml
+diff --git a/voiture.yaml b/yaml/voiture.yaml
+similarity index 100%
+rename from voiture.yaml
+rename to yaml/voiture.yaml
+➜  exercice-commit git:(master) git lg
+* 6620d27 - (HEAD -> master) refactor: move yaml files to yaml directory (22 minutes ago) <Romain Bohdanowicz>
+* 2c4f052 - fix: ville in contact.yaml (29 minutes ago) <Romain Bohdanowicz>
+* 69f9302 - fix: prenom in contact.yaml (29 minutes ago) <Romain Bohdanowicz>
+* 737ad81 - feat: societe.yaml (32 minutes ago) <Romain Bohdanowicz>
+* 901e13b - feat: voiture.yaml (32 minutes ago) <Romain Bohdanowicz>
+* 169e3d0 - chore: initial commit (33 minutes ago) <Romain Bohdanowicz>%                
+➜  exercice-commit git:(master) git show
+commit 6620d27130ffceaa6738edc2903552100b8c5ed7 (HEAD -> master)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Thu Oct 15 15:33:56 2020 +0200
+
+    refactor: move yaml files to yaml directory
+
+diff --git a/contact.yaml b/yaml/contact.yaml
+similarity index 100%
+rename from contact.yaml
+rename to yaml/contact.yaml
+diff --git a/societe.yaml b/yaml/societe.yaml
+similarity index 100%
+rename from societe.yaml
+rename to yaml/societe.yaml
+diff --git a/voiture.yaml b/yaml/voiture.yaml
+similarity index 100%
+rename from voiture.yaml
+rename to yaml/voiture.yaml
+➜  exercice-commit git:(master) git show     
+commit 6620d27130ffceaa6738edc2903552100b8c5ed7 (HEAD -> master)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Thu Oct 15 15:33:56 2020 +0200
+
+    refactor: move yaml files to yaml directory
+
+diff --git a/contact.yaml b/yaml/contact.yaml
+similarity index 100%
+rename from contact.yaml
+rename to yaml/contact.yaml
+diff --git a/societe.yaml b/yaml/societe.yaml
+similarity index 100%
+rename from societe.yaml
+rename to yaml/societe.yaml
+diff --git a/voiture.yaml b/yaml/voiture.yaml
+similarity index 100%
+rename from voiture.yaml
+rename to yaml/voiture.yaml
+➜  exercice-commit git:(master) git lg  
+* 6620d27 - (HEAD -> master) refactor: move yaml files to yaml directory (22 minutes ago) <Romain Bohdanowicz>
+* 2c4f052 - fix: ville in contact.yaml (29 minutes ago) <Romain Bohdanowicz>
+* 69f9302 - fix: prenom in contact.yaml (29 minutes ago) <Romain Bohdanowicz>
+* 737ad81 - feat: societe.yaml (32 minutes ago) <Romain Bohdanowicz>
+* 901e13b - feat: voiture.yaml (32 minutes ago) <Romain Bohdanowicz>
+* 169e3d0 - chore: initial commit (33 minutes ago) <Romain Bohdanowicz>%                
+➜  exercice-commit git:(master) git diff 737ad81 2c4f052
+diff --git a/contact.yaml b/contact.yaml
+index 7f71ffe..1e067cb 100644
+--- a/contact.yaml
++++ b/contact.yaml
+@@ -1,4 +1,4 @@
+ contact:
+-  prenom: Jean
++  prenom: Eric
+   nom: Dupont
+-  ville: Paris
++  ville: Bordeaux
