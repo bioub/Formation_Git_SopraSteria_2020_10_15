@@ -10,3 +10,5 @@ Formation Sopra Steria du 15/10/2020
 - `git help`
 - `git add`
 - `git commit`
+
+## Présentation des workflow
