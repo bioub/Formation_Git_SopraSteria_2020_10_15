@@ -1,0 +1,2521 @@
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ls -la
+total 9944
+drwxr-xr-x   9 romain  staff      288 Oct 15 16:28 .
+drwx------@ 15 romain  staff      480 Oct 15 22:01 ..
+drwxr-xr-x  13 romain  staff      416 Oct 15 16:28 .git
+-rw-r--r--@  1 romain  staff       12 Oct 15 14:11 .gitignore
+drwxr-xr-x  12 romain  staff      384 Oct 15 14:11 .idea
+-rw-r--r--   1 romain  staff      155 Oct 15 14:12 README.md
+-rw-r--r--   1 romain  staff    16683 Oct 15 16:28 exercice-commit.output
+-rw-r--r--   1 romain  staff  5058969 Oct 15 11:03 git.pdf
+drwxr-xr-x   4 romain  staff      128 Oct 15 12:29 logs
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+* a43497c - (HEAD -> master, origin/master) correction exercice (17 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (19 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (19 hours ago) <Romain Bohdanowicz>
+* 917486b - description (19 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (19 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (21 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (21 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (22 hours ago) <Romain Bohdanowicz>%                                 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git add -p
+diff --git a/README.md b/README.md
+index 6c2212d..1b5c45b 100644
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,4 @@
+-# Formation Git
++# Formation Git 2 jours
+ 
+ Formation Sopra Steria du 15/10/2020
+ 
+(1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? n
+@@ -9,3 +9,4 @@ Formation Sopra Steria du 15/10/2020
+ - `git help`
+ - `git add`
+ - `git commit`
++- `git log`
+(2/2) Stage this hunk [y,n,q,a,d,K,g,/,e,?]? q
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add -p
+diff --git a/README.md b/README.md
+index 6c2212d..fb86271 100644
+--- a/README.md
++++ b/README.md
+@@ -1,6 +1,6 @@
+-# Formation Git
++# Formation Git 2 jours
+ 
+-Formation Sopra Steria du 15/10/2020
++Formation Sopra Steria du 15/10/2020 ----
+ 
+ ## Liste de commandes basiques
+ 
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? q
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add -p
+diff --git a/README.md b/README.md
+index 6c2212d..d6d0eb0 100644
+--- a/README.md
++++ b/README.md
+@@ -1,8 +1,8 @@
+-# Formation Git
++# Formation Git 2 jours
+ 
+ Formation Sopra Steria du 15/10/2020
+ 
+-## Liste de commandes basiques
++## Liste de commandes basiques ----
+ 
+ - `git init`
+ - `git config`
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? q
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add -p
+diff --git a/README.md b/README.md
+index 6c2212d..8338b3b 100644
+--- a/README.md
++++ b/README.md
+@@ -1,10 +1,10 @@
+-# Formation Git
++# Formation Git 2 jours
+ 
+ Formation Sopra Steria du 15/10/2020
+ 
+ ## Liste de commandes basiques
+ 
+-- `git init`
++- `git init` ----
+ - `git config`
+ - `git help`
+ - `git add`
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? q
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add -p
+diff --git a/README.md b/README.md
+index 6c2212d..1d68fde 100644
+--- a/README.md
++++ b/README.md
+@@ -1,11 +1,11 @@
+-# Formation Git
++# Formation Git 2 jours
+ 
+ Formation Sopra Steria du 15/10/2020
+ 
+ ## Liste de commandes basiques
+ 
+ - `git init`
+-- `git config`
++- `git config` ----
+ - `git help`
+ - `git add`
+ - `git commit`
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? q
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add -p
+diff --git a/README.md b/README.md
+index 6c2212d..9e55ee0 100644
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,4 @@
+-# Formation Git
++# Formation Git 2 jours
+ 
+ Formation Sopra Steria du 15/10/2020
+ 
+(1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? q
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add -p
+diff --git a/README.md b/README.md
+index 6c2212d..1d68fde 100644
+--- a/README.md
++++ b/README.md
+@@ -1,11 +1,11 @@
+-# Formation Git
++# Formation Git 2 jours
+ 
+ Formation Sopra Steria du 15/10/2020
+ 
+ ## Liste de commandes basiques
+ 
+ - `git init`
+-- `git config`
++- `git config` ----
+ - `git help`
+ - `git add`
+ - `git commit`
+(1/1) Stage this hunk [y,n,q,a,d,s,e,?]? e
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git checkout README.md 
+Updated 0 paths from the index
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git checkout --cached README.md
+error: unknown option `cached'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git restore README.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git restore --staged README.md
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git checkout --cached README.md
+error: unknown option `cached'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --guess               second guess 'git checkout <no-such-branch>' (default)
+    --overlay             use overlay mode (default)
+    -q, --quiet           suppress progress reporting
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+    -m, --merge           perform a 3-way merge with the new branch
+    --conflict <style>    conflict style (merge or diff3)
+    -d, --detach          detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    -f, --force           force checkout (throw away local modifications)
+    --orphan <new-branch>
+                          new unparented branch
+    --overwrite-ignore    update ignored files (default)
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git checkout README.md 
+Updated 1 path from the index
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* a43497c - (HEAD -> master, origin/master) correction exercice (17 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (19 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (19 hours ago) <Romain Bohdanowicz>
+* 917486b - description (19 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (19 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (21 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (21 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (22 hours ago) <Romain Bohdanowicz>%                                                               
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git stash push "WIP: liste des configs vues en formation"
+error: pathspec ':(,prefix:0)WIP: liste des configs vues en formation' did not match any file(s) known to git
+Did you forget to 'git add'?
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add README.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git stash push "WIP: liste des configs vues en formation"
+error: pathspec ':(,prefix:0)WIP: liste des configs vues en formation' did not match any file(s) known to git
+Did you forget to 'git add'?
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git                                    add       -- add file contents to the index
+bisect    -- find by binary search the change that introduced a bug
+branch    -- list, create, or delete branches
+checkout  -- checkout a branch or paths to the working tree
+clone     -- clone a repository into a new directory
+commit    -- record changes to the repository
+diff      -- show changes between commits, commit and working tree, etc
+fetch     -- download objects and refs from another repository
+grep      -- print lines matching a pattern
+init      -- create an empty Git repository or reinitialize an existing one
+log       -- show commit logs
+merge     -- join two or more development histories together
+mv        -- move or rename a file, a directory, or a symlink
+pull      -- fetch from and merge with another repository or a local branch
+push      -- update remote refs along with associated objects
+rebase    -- forward-port local commits to the updated upstream head
+reset     -- reset current HEAD to the specified state
+rm        -- remove files from the working tree and from the index
+show      -- show various types of objects
+status    -- show the working tree status
+tag       -- create, list, delete or verify a tag object signed with GPG
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add README.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git stash push "WIP: liste des configs vues en formation"
+error: pathspec ':(,prefix:0)WIP: liste des configs vues en formation' did not match any file(s) known to git
+Did you forget to 'git add'?
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git stash push -m "WIP: liste des configs vues en formation" 
+Saved working directory and index state On master: WIP: liste des configs vues en formation
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash list
+stash@{0}: On master: WIP: liste des configs vues en formation
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git add README.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "option --version"
+[master 8a3ff99] option --version
+ 1 file changed, 1 insertion(+)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash pop
+Auto-merging README.md
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (c18aedd2e2c4ee916778b2c1fbd01a1a16f96709)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git stash list                  
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git stash save -u "WIP: qqchose"
+Saved working directory and index state On master: WIP: qqchose
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* 8a3ff99 - (HEAD -> master) option --version (3 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (17 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (19 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (21 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (21 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash pop
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TEST
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (6ead8900de8f8df3a45f9a2ae61993e107650ba1)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git stash list                  
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git stash save -u "WIP: qqchose"
+Saved working directory and index state On master: WIP: qqchose
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* 8a3ff99 - (HEAD -> master) option --version (6 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (17 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (19 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (21 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (21 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash list                  
+stash@{0}: On master: WIP: qqchose
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash pop                   
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TEST
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (3e666c87d0c7c20c14a55132bcc2c631290d7c48)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git diff
+diff --git a/README.md b/README.md
+index e0d43d3..7dcfd78 100644
+--- a/README.md
++++ b/README.md
+@@ -10,3 +10,7 @@ Formation Sopra Steria du 15/10/2020
+ - `git help`
+ - `git add`
+ - `git commit`
++
++## Liste de config vues pendant la formation
++
++- `git config --global user.name "Votre nom"`
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git diff -u
+diff --git a/README.md b/README.md
+index e0d43d3..7dcfd78 100644
+--- a/README.md
++++ b/README.md
+@@ -10,3 +10,7 @@ Formation Sopra Steria du 15/10/2020
+ - `git help`
+ - `git add`
+ - `git commit`
++
++## Liste de config vues pendant la formation
++
++- `git config --global user.name "Votre nom"`
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git diff --help
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ 2020-10-16 09:43:29.491 1PasswordNativeMessageHost[27362:8483033] 70600006 [EXT_NMH:(Secondary Thread 0x7fc18a41f470):OPNMXPCConnection.swift] E connect() | Connection Established
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add -N TEST 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        new file:   TEST
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git diff
+diff --git a/README.md b/README.md
+index e0d43d3..7dcfd78 100644
+--- a/README.md
++++ b/README.md
+@@ -10,3 +10,7 @@ Formation Sopra Steria du 15/10/2020
+ - `git help`
+ - `git add`
+ - `git commit`
++
++## Liste de config vues pendant la formation
++
++- `git config --global user.name "Votre nom"`
+diff --git a/TEST b/TEST
+new file mode 100644
+index 0000000..e69de29
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git reset HEAD --hard
+HEAD is now at 8a3ff99 option --version
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash save "WIP" 
+Saved working directory and index state On master: WIP
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash lsit
+fatal: unknown subcommand: lsit
+
+usage: git stash list [<options>]
+   or: git stash show [<options>] [<stash>]
+   or: git stash drop [-q|--quiet] [<stash>]
+   or: git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+   or: git stash branch <branchname> [<stash>]
+   or: git stash clear
+   or: git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+          [-u|--include-untracked] [-a|--all] [-m|--message <message>]
+          [--] [<pathspec>...]]
+   or: git stash save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+          [-u|--include-untracked] [-a|--all] [<message>]
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash list
+stash@{0}: On master: WIP
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash drop 
+Dropped refs/stash@{0} (1137917e163b46aaa2e4d85066e6cb2632e9fd4d)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git stash clear
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git add README.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "WIP"
+[master e3e4783] WIP
+ 1 file changed, 3 insertions(+)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^       
+Unstaged changes after reset:
+M       README.md
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add README.md  
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "WIP"
+[master 398008a] WIP
+ 1 file changed, 3 insertions(+)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git add README.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit --amend
+[master e3dd0f5] ma fonctionnalité
+ Date: Fri Oct 16 09:50:32 2020 +0200
+ 1 file changed, 5 insertions(+)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* e3dd0f5 - (HEAD -> master) ma fonctionnalité (12 seconds ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (17 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (17 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (20 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (21 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (21 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^ --hard
+HEAD is now at 8a3ff99 option --version
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) tree .git
+.git
+├── COMMIT_EDITMSG
+├── HEAD
+├── ORIG_HEAD
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── fsmonitor-watchman.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-merge-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── pre-receive.sample
+│   ├── prepare-commit-msg.sample
+│   └── update.sample
+├── index
+├── info
+│   └── exclude
+├── logs
+│   ├── HEAD
+│   └── refs
+│       ├── heads
+│       │   └── master
+│       └── remotes
+│           └── origin
+│               └── master
+├── objects
+│   ├── 04
+│   │   └── 97660302db23a70060d8b8b1cc89a28b95ec70
+│   ├── 09
+│   │   └── 0c32f9caaeb02a207ef0c75a7246ac6d8085fc
+│   ├── 0c
+│   │   └── eda82ec1b6553a150e06aad8890d4376863dd7
+│   ├── 11
+│   │   └── 37917e163b46aaa2e4d85066e6cb2632e9fd4d
+│   ├── 1d
+│   │   └── 68fde478c74d43a937fd8a7a1b4195ae26e32a
+│   ├── 33
+│   │   └── d86130bd3c27400fc78febbf21b2aa30dfcf2a
+│   ├── 39
+│   │   ├── 7b4a7624e35fa60563a9c03b1213d93f7b6546
+│   │   └── 8008aca10be1ba48acbcba2051cc71f7b0762d
+│   ├── 3e
+│   │   └── 666c87d0c7c20c14a55132bcc2c631290d7c48
+│   ├── 45
+│   │   └── 31d28fb2b6893d8890fc1cab02393e5075912c
+│   ├── 46
+│   │   └── 3a9a6eef90a45b4e73cda093079d5ef0e6d291
+│   ├── 4c
+│   │   └── 81d2a52fe93b9b7732bebce6fc32d23235d1be
+│   ├── 4d
+│   │   └── 3c22e5a202ca7edbe62f0208c96e398d6b0790
+│   ├── 4e
+│   │   └── 34ada5cf8f0d176119653271b5f73337c763bb
+│   ├── 56
+│   │   └── 2cc4409bbf54b715355a37b18014f2d1200bd0
+│   ├── 5e
+│   │   └── 4534db70bb9a84be62bb374dc4f75cc9ded9d7
+│   ├── 61
+│   │   └── 3d05909e0e155dc4cad3d4ddf2eaf5a94439b9
+│   ├── 6c
+│   │   └── 2212d4c443be09cc61ff4ea59c14c3aab716dd
+│   ├── 6e
+│   │   ├── 7022430efa9bc72aea54fe9e0464aa28785b62
+│   │   └── ad8900de8f8df3a45f9a2ae61993e107650ba1
+│   ├── 70
+│   │   └── 15b96828f91f8367c1b5b19a3a9d049a04c0a3
+│   ├── 71
+│   │   └── 69a19262857372e605ecf3287885624114cc44
+│   ├── 75
+│   │   └── e4562ec961977cc05dae0a1def48efcc022951
+│   ├── 78
+│   │   └── 1519bd4c691c14d88cfb584524cfa787d8fc30
+│   ├── 79
+│   │   └── 84eded120fa9eedb7a34cc073315f689e04e52
+│   ├── 7d
+│   │   ├── ced018060b4280d4a71b00e9288d53a5257811
+│   │   └── cfd7873e60b62b5402d2c379ddd4a06b6670e2
+│   ├── 7f
+│   │   └── 3509354277c1c8c9654fa2b5da5c923f412188
+│   ├── 8a
+│   │   └── 3ff99494d325b197a32977ab6f0599dc927944
+│   ├── 8c
+│   │   └── ef5601e225e4452c9b7b4bec5276e58f0ad8a8
+│   ├── 91
+│   │   ├── 7486b9ebd79b6695adcbc22f07cf56035e3337
+│   │   └── 8f5006a51a9ae490758825161ef65d1928f94f
+│   ├── 9b
+│   │   ├── 864f4a1972d5ca01b26c0e8d4611b3a6ffa7bd
+│   │   └── f94021013edb27d0f31742679a9b4b10ed9a8c
+│   ├── a4
+│   │   └── 3497cdff2ca3b44d8f9504393804cdbd45ff5b
+│   ├── ab
+│   │   └── 6720571e4289fe29c4501ec339354050c7a428
+│   ├── ae
+│   │   └── 95269cfb74b4eec747762bf00e3d9db984bd1f
+│   ├── b6
+│   │   └── f708693df254c602fbf419160a1d5b9d62f864
+│   ├── c1
+│   │   └── 8aedd2e2c4ee916778b2c1fbd01a1a16f96709
+│   ├── c3
+│   │   └── fe0a162d3eee0ae43405f3ce204b80b2dfded3
+│   ├── c6
+│   │   └── 1dcd7cf5469af823a235536efce64c3c9f3c5b
+│   ├── c7
+│   │   └── 25ad81c55854d0d55c7bd1269cc56c7eed6ef2
+│   ├── d0
+│   │   └── 1d669b81c6280d5383634dcef9589e8257af71
+│   ├── d2
+│   │   └── 10353e61892844d38419b19312c5000d2a4eca
+│   ├── d3
+│   │   └── 0cc0e787432755cb7bb6141c5965b0970e0f85
+│   ├── d5
+│   │   └── 64d0bc3dd917926892c55e3706cc116d5b165e
+│   ├── e0
+│   │   ├── cd6592ffa5ec5de3fddf2be2d5a089c1694f95
+│   │   └── d43d32f9fcdd08511a77dd1de32019d177e778
+│   ├── e1
+│   │   ├── 8dd539c483da425034715986826c8ad9c4cc67
+│   │   └── cfdec9753dd101b4bdc9371f2a3cac7271a573
+│   ├── e3
+│   │   ├── dd0f5f110d2d4c80cce139c4a816cf5bab3f4f
+│   │   └── e478318bf79f5932c0f1d0b6b89b76e34d10a5
+│   ├── e6
+│   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   ├── eb
+│   │   └── 58d79902ab1efd76b66c09af6ecad6acd1ca80
+│   ├── ec
+│   │   └── 6641eb2ce72c2700f6a2ff83ec3d0a1657a1c7
+│   ├── f9
+│   │   └── cbdf85a896131aed99793d0f923f667601f930
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    │   └── master
+    ├── remotes
+    │   └── origin
+    │       └── master
+    └── tags
+
+63 directories, 80 files
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git show e3dd
+commit e3dd0f5f110d2d4c80cce139c4a816cf5bab3f4f
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Fri Oct 16 09:50:32 2020 +0200
+
+    ma fonctionnalité
+
+diff --git a/README.md b/README.md
+index e0d43d3..75e4562 100644
+--- a/README.md
++++ b/README.md
+@@ -10,3 +10,8 @@ Formation Sopra Steria du 15/10/2020
+ - `git help`
+ - `git add`
+ - `git commit`
++
++
++dfgfdgd jsfgd
++
++fgssffsgs
+\ No newline at end of file
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) tree .git    
+.git
+├── COMMIT_EDITMSG
+├── HEAD
+├── ORIG_HEAD
+├── config
+├── description
+├── hooks
+│   ├── applypatch-msg.sample
+│   ├── commit-msg.sample
+│   ├── fsmonitor-watchman.sample
+│   ├── post-update.sample
+│   ├── pre-applypatch.sample
+│   ├── pre-commit.sample
+│   ├── pre-merge-commit.sample
+│   ├── pre-push.sample
+│   ├── pre-rebase.sample
+│   ├── pre-receive.sample
+│   ├── prepare-commit-msg.sample
+│   └── update.sample
+├── index
+├── info
+│   └── exclude
+├── logs
+│   ├── HEAD
+│   └── refs
+│       ├── heads
+│       │   └── master
+│       └── remotes
+│           └── origin
+│               └── master
+├── objects
+│   ├── 04
+│   │   └── 97660302db23a70060d8b8b1cc89a28b95ec70
+│   ├── 09
+│   │   └── 0c32f9caaeb02a207ef0c75a7246ac6d8085fc
+│   ├── 0c
+│   │   └── eda82ec1b6553a150e06aad8890d4376863dd7
+│   ├── 11
+│   │   └── 37917e163b46aaa2e4d85066e6cb2632e9fd4d
+│   ├── 1d
+│   │   └── 68fde478c74d43a937fd8a7a1b4195ae26e32a
+│   ├── 33
+│   │   └── d86130bd3c27400fc78febbf21b2aa30dfcf2a
+│   ├── 39
+│   │   ├── 7b4a7624e35fa60563a9c03b1213d93f7b6546
+│   │   └── 8008aca10be1ba48acbcba2051cc71f7b0762d
+│   ├── 3e
+│   │   └── 666c87d0c7c20c14a55132bcc2c631290d7c48
+│   ├── 45
+│   │   └── 31d28fb2b6893d8890fc1cab02393e5075912c
+│   ├── 46
+│   │   └── 3a9a6eef90a45b4e73cda093079d5ef0e6d291
+│   ├── 4c
+│   │   └── 81d2a52fe93b9b7732bebce6fc32d23235d1be
+│   ├── 4d
+│   │   └── 3c22e5a202ca7edbe62f0208c96e398d6b0790
+│   ├── 4e
+│   │   └── 34ada5cf8f0d176119653271b5f73337c763bb
+│   ├── 56
+│   │   └── 2cc4409bbf54b715355a37b18014f2d1200bd0
+│   ├── 5e
+│   │   └── 4534db70bb9a84be62bb374dc4f75cc9ded9d7
+│   ├── 61
+│   │   └── 3d05909e0e155dc4cad3d4ddf2eaf5a94439b9
+│   ├── 6c
+│   │   └── 2212d4c443be09cc61ff4ea59c14c3aab716dd
+│   ├── 6e
+│   │   ├── 7022430efa9bc72aea54fe9e0464aa28785b62
+│   │   └── ad8900de8f8df3a45f9a2ae61993e107650ba1
+│   ├── 70
+│   │   └── 15b96828f91f8367c1b5b19a3a9d049a04c0a3
+│   ├── 71
+│   │   └── 69a19262857372e605ecf3287885624114cc44
+│   ├── 75
+│   │   └── e4562ec961977cc05dae0a1def48efcc022951
+│   ├── 78
+│   │   └── 1519bd4c691c14d88cfb584524cfa787d8fc30
+│   ├── 79
+│   │   └── 84eded120fa9eedb7a34cc073315f689e04e52
+│   ├── 7d
+│   │   ├── ced018060b4280d4a71b00e9288d53a5257811
+│   │   └── cfd7873e60b62b5402d2c379ddd4a06b6670e2
+│   ├── 7f
+│   │   └── 3509354277c1c8c9654fa2b5da5c923f412188
+│   ├── 8a
+│   │   └── 3ff99494d325b197a32977ab6f0599dc927944
+│   ├── 8c
+│   │   └── ef5601e225e4452c9b7b4bec5276e58f0ad8a8
+│   ├── 91
+│   │   ├── 7486b9ebd79b6695adcbc22f07cf56035e3337
+│   │   └── 8f5006a51a9ae490758825161ef65d1928f94f
+│   ├── 9b
+│   │   ├── 864f4a1972d5ca01b26c0e8d4611b3a6ffa7bd
+│   │   └── f94021013edb27d0f31742679a9b4b10ed9a8c
+│   ├── a4
+│   │   └── 3497cdff2ca3b44d8f9504393804cdbd45ff5b
+│   ├── ab
+│   │   └── 6720571e4289fe29c4501ec339354050c7a428
+│   ├── ae
+│   │   └── 95269cfb74b4eec747762bf00e3d9db984bd1f
+│   ├── b6
+│   │   └── f708693df254c602fbf419160a1d5b9d62f864
+│   ├── c1
+│   │   └── 8aedd2e2c4ee916778b2c1fbd01a1a16f96709
+│   ├── c3
+│   │   └── fe0a162d3eee0ae43405f3ce204b80b2dfded3
+│   ├── c6
+│   │   └── 1dcd7cf5469af823a235536efce64c3c9f3c5b
+│   ├── c7
+│   │   └── 25ad81c55854d0d55c7bd1269cc56c7eed6ef2
+│   ├── d0
+│   │   └── 1d669b81c6280d5383634dcef9589e8257af71
+│   ├── d2
+│   │   └── 10353e61892844d38419b19312c5000d2a4eca
+│   ├── d3
+│   │   └── 0cc0e787432755cb7bb6141c5965b0970e0f85
+│   ├── d5
+│   │   └── 64d0bc3dd917926892c55e3706cc116d5b165e
+│   ├── e0
+│   │   ├── cd6592ffa5ec5de3fddf2be2d5a089c1694f95
+│   │   └── d43d32f9fcdd08511a77dd1de32019d177e778
+│   ├── e1
+│   │   ├── 8dd539c483da425034715986826c8ad9c4cc67
+│   │   └── cfdec9753dd101b4bdc9371f2a3cac7271a573
+│   ├── e3
+│   │   ├── dd0f5f110d2d4c80cce139c4a816cf5bab3f4f
+│   │   └── e478318bf79f5932c0f1d0b6b89b76e34d10a5
+│   ├── e6
+│   │   └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+│   ├── eb
+│   │   └── 58d79902ab1efd76b66c09af6ecad6acd1ca80
+│   ├── ec
+│   │   └── 6641eb2ce72c2700f6a2ff83ec3d0a1657a1c7
+│   ├── f9
+│   │   └── cbdf85a896131aed99793d0f923f667601f930
+│   ├── info
+│   └── pack
+└── refs
+    ├── heads
+    │   └── master
+    ├── remotes
+    │   └── origin
+    │       └── master
+    └── tags
+
+63 directories, 80 files
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git log --oneline
+8a3ff99 (HEAD -> master) option --version
+a43497c (origin/master) correction exercice
+6e70224 exclude config IntelliJ
+7984ede suite des commandes
+917486b description
+562cc44 commandes basiques
+463a9a6 versionne le dossier logs
+7f35093 .gitignore
+d210353 slides
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reflog
+8a3ff99 (HEAD -> master) HEAD@{0}: reset: moving to HEAD^
+e3dd0f5 HEAD@{1}: commit (amend): ma fonctionnalité
+398008a HEAD@{2}: commit: WIP
+8a3ff99 (HEAD -> master) HEAD@{3}: reset: moving to HEAD^
+e3e4783 HEAD@{4}: commit: WIP
+8a3ff99 (HEAD -> master) HEAD@{5}: reset: moving to HEAD
+8a3ff99 (HEAD -> master) HEAD@{6}: reset: moving to HEAD
+8a3ff99 (HEAD -> master) HEAD@{7}: reset: moving to HEAD
+8a3ff99 (HEAD -> master) HEAD@{8}: reset: moving to HEAD
+8a3ff99 (HEAD -> master) HEAD@{9}: commit: option --version
+a43497c (origin/master) HEAD@{10}: reset: moving to HEAD
+a43497c (origin/master) HEAD@{11}: commit: correction exercice
+6e70224 HEAD@{12}: reset: moving to HEAD
+6e70224 HEAD@{13}: commit: exclude config IntelliJ
+7984ede HEAD@{14}: commit: suite des commandes
+917486b HEAD@{15}: commit: description
+562cc44 HEAD@{16}: commit: commandes basiques
+463a9a6 HEAD@{17}: commit: versionne le dossier logs
+7f35093 HEAD@{18}: commit: .gitignore
+d210353 HEAD@{19}: reset: moving to HEAD
+d210353 HEAD@{20}: commit (initial): slides
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cherry-pick --help
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) Ouverture dans une session de navigateur existante.
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cherry-pick --ff e3dd0f5
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* e3dd0f5 - (HEAD -> master) ma fonctionnalité (9 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (25 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (20 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (21 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^ --hard
+HEAD is now at 8a3ff99 option --version
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* 8a3ff99 - (HEAD -> master) option --version (26 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (20 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cherry-pick e3dd0f5     
+[master dbd2e2f] ma fonctionnalité
+ Date: Fri Oct 16 09:50:32 2020 +0200
+ 1 file changed, 5 insertions(+)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* dbd2e2f - (HEAD -> master) ma fonctionnalité (6 seconds ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (26 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (20 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^ --hard 
+HEAD is now at 8a3ff99 option --version
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cherry-pick --ff e3dd0f5
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* e3dd0f5 - (HEAD -> master) ma fonctionnalité (10 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (27 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (20 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reflog
+e3dd0f5 (HEAD -> master) HEAD@{0}: cherry-pick: fast-forward
+8a3ff99 HEAD@{1}: reset: moving to HEAD^
+dbd2e2f HEAD@{2}: cherry-pick: ma fonctionnalité
+8a3ff99 HEAD@{3}: reset: moving to HEAD^
+e3dd0f5 (HEAD -> master) HEAD@{4}: cherry-pick: fast-forward
+8a3ff99 HEAD@{5}: reset: moving to HEAD^
+e3dd0f5 (HEAD -> master) HEAD@{6}: commit (amend): ma fonctionnalité
+398008a HEAD@{7}: commit: WIP
+8a3ff99 HEAD@{8}: reset: moving to HEAD^
+e3e4783 HEAD@{9}: commit: WIP
+8a3ff99 HEAD@{10}: reset: moving to HEAD
+8a3ff99 HEAD@{11}: reset: moving to HEAD
+8a3ff99 HEAD@{12}: reset: moving to HEAD
+8a3ff99 HEAD@{13}: reset: moving to HEAD
+8a3ff99 HEAD@{14}: commit: option --version
+a43497c (origin/master) HEAD@{15}: reset: moving to HEAD
+a43497c (origin/master) HEAD@{16}: commit: correction exercice
+6e70224 HEAD@{17}: reset: moving to HEAD
+6e70224 HEAD@{18}: commit: exclude config IntelliJ
+7984ede HEAD@{19}: commit: suite des commandes
+917486b HEAD@{20}: commit: description
+562cc44 HEAD@{21}: commit: commandes basiques
+463a9a6 HEAD@{22}: commit: versionne le dossier logs
+7f35093 HEAD@{23}: commit: .gitignore
+d210353 HEAD@{24}: reset: moving to HEAD
+d210353 HEAD@{25}: commit (initial): slides
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git add .
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "TEST"
+[master b3f20f8] TEST
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* b3f20f8 - (HEAD -> master) TEST (2 seconds ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (12 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (28 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (20 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cat-file -p b3f20f8
+tree 5720d98367fc376d7b60f5f6c86d73efeeed688e
+parent e3dd0f5f110d2d4c80cce139c4a816cf5bab3f4f
+author Romain Bohdanowicz <romain.bohdanowicz@gmail.com> 1602835347 +0200
+committer Romain Bohdanowicz <romain.bohdanowicz@gmail.com> 1602835347 +0200
+
+TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset 8a3ff99 --hard
+HEAD is now at 8a3ff99 option --version
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* 8a3ff99 - (HEAD -> master) option --version (29 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (20 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cat-file -p b3f20f8 
+tree 5720d98367fc376d7b60f5f6c86d73efeeed688e
+parent e3dd0f5f110d2d4c80cce139c4a816cf5bab3f4f
+author Romain Bohdanowicz <romain.bohdanowicz@gmail.com> 1602835347 +0200
+committer Romain Bohdanowicz <romain.bohdanowicz@gmail.com> 1602835347 +0200
+
+TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cherry-pick --ff b3f20f8
+[master 39fb073] TEST
+ Date: Fri Oct 16 10:02:27 2020 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^ --hard
+HEAD is now at 8a3ff99 option --version
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* 8a3ff99 - (HEAD -> master) option --version (30 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (20 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cherry-pick --ff e3dd
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cherry-pick --ff b3f20f8
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* b3f20f8 - (HEAD -> master) TEST (2 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (14 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (31 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (20 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (20 hours ago) <Romain Bohdanowicz>
+* 917486b - description (20 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (20 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (23 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git cat-file -p b3f20f8
+tree 5720d98367fc376d7b60f5f6c86d73efeeed688e
+parent e3dd0f5f110d2d4c80cce139c4a816cf5bab3f4f
+author Romain Bohdanowicz <romain.bohdanowicz@gmail.com> 1602835347 +0200
+committer Romain Bohdanowicz <romain.bohdanowicz@gmail.com> 1602835347 +0200
+
+TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* b3f20f8 - (HEAD -> master) TEST (39 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (51 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (67 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git commit --amend
+[master 5f2dec5] Test
+ Date: Fri Oct 16 10:02:27 2020 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg            
+* 5f2dec5 - (HEAD -> master) Test (15 seconds ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (51 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (68 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout 6e70224 
+Note: switching to '6e70224'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 6e70224 exclude config IntelliJ
+➜  Formation_Git_SopraSteria_2020_10_15 git:(6e70224) git lg
+* 6e70224 - (HEAD) exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(6e70224) git lg --all
+* 5f2dec5 - (master) Test (6 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (57 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (73 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - (HEAD) exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(6e70224) git checkout master  
+Previous HEAD position was 6e70224 exclude config IntelliJ
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all        
+* 5f2dec5 - (HEAD -> master) Test (7 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (58 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (74 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout origin/master  
+Note: switching to 'origin/master'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a43497c correction exercice
+➜  Formation_Git_SopraSteria_2020_10_15 git:(a43497c) git lg --all               
+* 5f2dec5 - (master) Test (7 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (58 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (75 minutes ago) <Romain Bohdanowicz>
+* a43497c - (HEAD, origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(a43497c) git checkout master        
+Previous HEAD position was a43497c correction exercice
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all        
+* 5f2dec5 - (HEAD -> master) Test (7 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (58 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (75 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout 6e70224       
+Note: switching to '6e70224'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 6e70224 exclude config IntelliJ
+➜  Formation_Git_SopraSteria_2020_10_15 git:(6e70224) git lg
+* 6e70224 - (HEAD) exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(6e70224) git switch -c intellij
+Switched to a new branch 'intellij'
+➜  Formation_Git_SopraSteria_2020_10_15 git:(intellij) git lg                
+* 6e70224 - (HEAD -> intellij) exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(intellij) git lg --all
+* 5f2dec5 - (master) Test (9 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (60 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (77 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - (HEAD -> intellij) exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(intellij) git checkout master  
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout a43497c       
+Note: switching to 'a43497c'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a43497c correction exercice
+➜  Formation_Git_SopraSteria_2020_10_15 git:(a43497c) 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(test) git checkout master  
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git 
+add       -- add file contents to the index
+bisect    -- find by binary search the change that introduced a bug
+branch    -- list, create, or delete branches
+checkout  -- checkout a branch or paths to the working tree
+clone     -- clone a repository into a new directory
+commit    -- record changes to the repository
+diff      -- show changes between commits, commit and working tree, etc
+fetch     -- download objects and refs from another repository
+grep      -- print lines matching a pattern
+init      -- create an empty Git repository or reinitialize an existing one
+log       -- show commit logs
+merge     -- join two or more development histories together
+mv        -- move or rename a file, a directory, or a symlink
+pull      -- fetch from and merge with another repository or a local branch
+push      -- update remote refs along with associated objects
+rebase    -- forward-port local commits to the updated upstream head
+reset     -- reset current HEAD to the specified state
+rm        -- remove files from the working tree and from the index
+show      -- show various types of objects
+status    -- show the working tree status
+tag       -- create, list, delete or verify a tag object signed with GPG
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git switch test  
+Switched to branch 'test'
+➜  Formation_Git_SopraSteria_2020_10_15 git:(test) git switch intellij  
+Switched to branch 'intellij'
+➜  Formation_Git_SopraSteria_2020_10_15 git:(intellij) git checkout master  
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout master  
+Already on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --al
+fatal: unrecognized argument: --al
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+* 5f2dec5 - (HEAD -> master) Test (12 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (63 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (79 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master, test) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - (intellij) exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git branch -d test  intellij  
+Deleted branch test (was a43497c).
+Deleted branch intellij (was 6e70224).
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all                 
+* 5f2dec5 - (HEAD -> master) Test (12 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (63 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (80 minutes ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (18 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (22 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (22 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout HEAD^ 
+Note: switching to 'HEAD^'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e3dd0f5 ma fonctionnalité
+➜  Formation_Git_SopraSteria_2020_10_15 git:(e3dd0f5) git checkout HEAD^ 
+Previous HEAD position was e3dd0f5 ma fonctionnalité
+HEAD is now at 8a3ff99 option --version
+➜  Formation_Git_SopraSteria_2020_10_15 git:(8a3ff99) git checkout HEAD^ 
+Previous HEAD position was 8a3ff99 option --version
+HEAD is now at a43497c correction exercice
+➜  Formation_Git_SopraSteria_2020_10_15 git:(a43497c) git checkout HEAD^ 
+Previous HEAD position was a43497c correction exercice
+HEAD is now at 6e70224 exclude config IntelliJ
+➜  Formation_Git_SopraSteria_2020_10_15 git:(6e70224) git checkout HEAD^ 
+Previous HEAD position was 6e70224 exclude config IntelliJ
+HEAD is now at 7984ede suite des commandes
+➜  Formation_Git_SopraSteria_2020_10_15 git:(7984ede) ✗ git checkout HEAD^ 
+Previous HEAD position was 7984ede suite des commandes
+HEAD is now at 917486b description
+➜  Formation_Git_SopraSteria_2020_10_15 git:(917486b) ✗ git checkout HEAD^ 
+Previous HEAD position was 917486b description
+HEAD is now at 562cc44 commandes basiques
+➜  Formation_Git_SopraSteria_2020_10_15 git:(562cc44) ✗ git checkout HEAD^ 
+Previous HEAD position was 562cc44 commandes basiques
+HEAD is now at 463a9a6 versionne le dossier logs
+➜  Formation_Git_SopraSteria_2020_10_15 git:(463a9a6) ✗ git checkout HEAD^ 
+Previous HEAD position was 463a9a6 versionne le dossier logs
+HEAD is now at 7f35093 .gitignore
+➜  Formation_Git_SopraSteria_2020_10_15 git:(7f35093) ✗ git checkout HEAD^ 
+Previous HEAD position was 7f35093 .gitignore
+HEAD is now at d210353 slides
+➜  Formation_Git_SopraSteria_2020_10_15 git:(d210353) ✗ git checkout HEAD^ 
+error: pathspec 'HEAD^' did not match any file(s) known to git
+➜  Formation_Git_SopraSteria_2020_10_15 git:(d210353) ✗ git checkout master  
+Previous HEAD position was d210353 slides
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout master 
+Already on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout HEAD^  Note: switching to 'HEAD^'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e3dd0f5 ma fonctionnalité
+➜  Formation_Git_SopraSteria_2020_10_15 git:(e3dd0f5) git checkout HEAD^ 
+Previous HEAD position was e3dd0f5 ma fonctionnalité
+HEAD is now at 8a3ff99 option --version
+➜  Formation_Git_SopraSteria_2020_10_15 git:(8a3ff99) git checkout HEAD^ 
+Previous HEAD position was 8a3ff99 option --version
+HEAD is now at a43497c correction exercice
+➜  Formation_Git_SopraSteria_2020_10_15 git:(a43497c) git checkout HEAD^ 
+Previous HEAD position was a43497c correction exercice
+HEAD is now at 6e70224 exclude config IntelliJ
+➜  Formation_Git_SopraSteria_2020_10_15 git:(6e70224) git show
+commit 6e7022430efa9bc72aea54fe9e0464aa28785b62 (HEAD)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Thu Oct 15 14:11:59 2020 +0200
+
+    exclude config IntelliJ
+
+diff --git a/.gitignore b/.gitignore
+index 397b4a7..0497660 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1,2 @@
+ *.log
++.idea
+➜  Formation_Git_SopraSteria_2020_10_15 git:(6e70224) git checkout HEAD^ 
+Previous HEAD position was 6e70224 exclude config IntelliJ
+HEAD is now at 7984ede suite des commandes
+➜  Formation_Git_SopraSteria_2020_10_15 git:(7984ede) ✗ git checkout HEAD^
+Previous HEAD position was 7984ede suite des commandes
+HEAD is now at 917486b description
+➜  Formation_Git_SopraSteria_2020_10_15 git:(917486b) ✗ git checkout HEAD^
+Previous HEAD position was 917486b description
+HEAD is now at 562cc44 commandes basiques
+➜  Formation_Git_SopraSteria_2020_10_15 git:(562cc44) ✗ git checkout HEAD^
+Previous HEAD position was 562cc44 commandes basiques
+HEAD is now at 463a9a6 versionne le dossier logs
+➜  Formation_Git_SopraSteria_2020_10_15 git:(463a9a6) ✗ git checkout HEAD^
+Previous HEAD position was 463a9a6 versionne le dossier logs
+HEAD is now at 7f35093 .gitignore
+➜  Formation_Git_SopraSteria_2020_10_15 git:(7f35093) ✗ git checkout HEAD^
+Previous HEAD position was 7f35093 .gitignore
+HEAD is now at d210353 slides
+➜  Formation_Git_SopraSteria_2020_10_15 git:(d210353) ✗ git checkout master 
+Previous HEAD position was d210353 slides
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout d210353 
+Note: switching to 'd210353'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at d210353 slides
+➜  Formation_Git_SopraSteria_2020_10_15 git:(d210353) ✗ git checkout master 
+Previous HEAD position was d210353 slides
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git show
+commit 5f2dec59d3647ac0c8ce494f64ed134cfa1d5b0c (HEAD -> master)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Fri Oct 16 10:02:27 2020 +0200
+
+    Test
+
+diff --git a/TEST b/TEST
+new file mode 100644
+index 0000000..e69de29
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git commit --amend
+[master bcbbb2e] TEST
+ Date: Fri Oct 16 10:02:27 2020 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git add TEST 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit --amend
+[master 444a41a] TEST
+ Date: Fri Oct 16 10:02:27 2020 +0200
+ 1 file changed, 3 insertions(+)
+ create mode 100644 TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git show
+commit 444a41a969281f4e7e6c33b84bd6670105fc71ab (HEAD -> master)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Fri Oct 16 10:02:27 2020 +0200
+
+    TEST
+
+diff --git a/TEST b/TEST
+new file mode 100644
+index 0000000..8e5d19d
+--- /dev/null
++++ b/TEST
+@@ -0,0 +1,3 @@
++# TEST
++
++dhjdgh
+\ No newline at end of file
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git diff
+diff --git a/TEST b/TEST
+index 8e5d19d..2ac4786 100644
+--- a/TEST
++++ b/TEST
+@@ -1,3 +1,4 @@
+ # TEST
+ 
+-dhjdgh
+\ No newline at end of file
++dhjdgh
++new line
+\ No newline at end of file
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add TEST 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit --amend --no-edit
+[master a3d9926] TEST
+ Date: Fri Oct 16 10:02:27 2020 +0200
+ 1 file changed, 3 insertions(+)
+ create mode 100644 TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git show
+commit a3d9926333e2323161e697876c3e1989d1bc250c (HEAD -> master)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Fri Oct 16 10:02:27 2020 +0200
+
+    TEST
+
+diff --git a/TEST b/TEST
+new file mode 100644
+index 0000000..0c2eaba
+--- /dev/null
++++ b/TEST
+@@ -0,0 +1,3 @@
++# TEST
++
++dhjdgh
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git diff
+diff --git a/README.md b/README.md
+index 75e4562..a13ed9b 100644
+--- a/README.md
++++ b/README.md
+@@ -11,7 +11,6 @@ Formation Sopra Steria du 15/10/2020
+ - `git add`
+ - `git commit`
+ 
+-
+ dfgfdgd jsfgd
+ 
+-fgssffsgs
+\ No newline at end of file
++fgssffsgs
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add .
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git diff --cached
+diff --git a/.editorconfig b/.editorconfig
+new file mode 100644
+index 0000000..a61421b
+--- /dev/null
++++ b/.editorconfig
+@@ -0,0 +1,9 @@
++root = true
++
++[*]
++indent_style = space
++indent_size = 2
++charset = utf-8
++end_of_line = lf    
++trim_trailing_whitespace = true     
++insert_final_newline = false
+\ No newline at end of file
+diff --git a/README.md b/README.md
+index 75e4562..a13ed9b 100644
+--- a/README.md
++++ b/README.md
+@@ -11,7 +11,6 @@ Formation Sopra Steria du 15/10/2020
+ - `git add`
+ - `git commit`
+ 
+-
+ dfgfdgd jsfgd
+ 
+-fgssffsgs
+\ No newline at end of file
++fgssffsgs
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git diff         
+diff --git a/.editorconfig b/.editorconfig
+index a61421b..1bdeae1 100644
+--- a/.editorconfig
++++ b/.editorconfig
+@@ -4,6 +4,6 @@ root = true
+ indent_style = space
+ indent_size = 2
+ charset = utf-8
+-end_of_line = lf    
+-trim_trailing_whitespace = true     
++end_of_line = lf
++trim_trailing_whitespace = true
+ insert_final_newline = false
+\ No newline at end of file
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m ".editorconfig"
+[master 6c37465] .editorconfig
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+ create mode 100644 .editorconfig
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add .
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git oops                       
+[master 58508a8] .editorconfig
+ Date: Fri Oct 16 11:10:54 2020 +0200
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+ create mode 100644 .editorconfig
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master)git show
+commit 58508a8b7b0f13ebc4ca35a141b05f222aca920a (HEAD -> master)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Fri Oct 16 11:10:54 2020 +0200
+
+    .editorconfig
+
+diff --git a/.editorconfig b/.editorconfig
+new file mode 100644
+index 0000000..9e358f0
+--- /dev/null
++++ b/.editorconfig
+@@ -0,0 +1,9 @@
++root = true
++
++[*]
++indent_style = space
++indent_size = 2
++charset = utf-8
++end_of_line = lf
++trim_trailing_whitespace = true
++insert_final_newline = true
+diff --git a/README.md b/README.md
+index 75e4562..a13ed9b 100644
+--- a/README.md
++++ b/README.md
+@@ -11,7 +11,6 @@ Formation Sopra Steria du 15/10/2020
+ - `git add`
+ - `git commit`
+ 
+-
+ dfgfdgd jsfgd
+ 
+-fgssffsgs
+\ No newline at end of file
++fgssffsgs
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master)git reset HEAD^ 
+Unstaged changes after reset:
+M       README.md
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .editorconfig
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add .
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m ".editorconfig"
+[master b58c49c] .editorconfig
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+ create mode 100644 .editorconfig
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^ --soft       
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .editorconfig
+        modified:   README.md
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m ".editorconfig"
+[master bf6b8c2] .editorconfig
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+ create mode 100644 .editorconfig
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^ --hard       
+HEAD is now at a3d9926 TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master)git cherry-pick --ff bf6b8c2
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master)git lg
+* bf6b8c2 - (HEAD -> master) .editorconfig (70 seconds ago) <Romain Bohdanowicz>
+* a3d9926 - TEST (15 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (84 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                                 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^ 
+Unstaged changes after reset:
+M       README.md
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git lg          
+* a3d9926 - (HEAD -> master) TEST (16 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (85 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* 09c2391 - (HEAD -> master) .editorconfig (5 seconds ago) <Romain Bohdanowicz>
+* a3d9926 - TEST (17 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (86 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git config --global alias.uncommit "reset HEAD~1 --soft"
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git uncommit
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m ".editorconfig"
+[master 5868aee] .editorconfig
+ 2 files changed, 10 insertions(+), 2 deletions(-)
+ create mode 100644 .editorconfig
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git stage git.pdf
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "DELETE SLIDES"
+[master 1051c19] DELETE SLIDES
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 git.pdf
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^ --hard
+HEAD is now at 5868aee .editorconfig
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* 5868aee - (HEAD -> master) .editorconfig (2 minutes ago) <Romain Bohdanowicz>
+* a3d9926 - TEST (20 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (89 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout HEAD^
+Note: switching to 'HEAD^'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a3d9926 TEST
+➜  Formation_Git_SopraSteria_2020_10_15 git:(a3d9926) git lg --all
+* 5868aee - (master) .editorconfig (2 minutes ago) <Romain Bohdanowicz>
+* a3d9926 - (HEAD) TEST (20 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (89 minutes ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(a3d9926) git checkout master  
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+➜  Formation_Git_SopraSteria_2020_10_15 git:(a3d9926) ✗ git reset HEAD^ 
+Unstaged changes after reset:
+M       README.md
+➜  Formation_Git_SopraSteria_2020_10_15 git:(e3dd0f5) ✗ git lg --all
+* 5868aee - (master) .editorconfig (3 minutes ago) <Romain Bohdanowicz>
+* a3d9926 - TEST (21 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - (HEAD) ma fonctionnalité (2 hours ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(e3dd0f5) ✗ git checkout master  
+error: Your local changes to the following files would be overwritten by checkout:
+        README.md
+Please commit your changes or stash them before you switch branches.
+error: The following untracked working tree files would be overwritten by checkout:
+        TEST
+Please move or remove them before you switch branches.
+Aborting
+➜  Formation_Git_SopraSteria_2020_10_15 git:(e3dd0f5) git checkout master 
+Previous HEAD position was e3dd0f5 ma fonctionnalité
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+* 5868aee - (HEAD -> master) .editorconfig (4 minutes ago) <Romain Bohdanowicz>
+* a3d9926 - TEST (22 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (2 hours ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset HEAD^ 
+Unstaged changes after reset:
+M       README.md
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git lg --all
+* a3d9926 - (HEAD -> master) TEST (22 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (2 hours ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (21 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (21 hours ago) <Romain Bohdanowicz>
+* 917486b - description (21 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (21 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (24 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git revert 6e70224             
+[master 4d62f5d] Revert "exclude config IntelliJ"
+ 1 file changed, 1 deletion(-)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git lg
+* 4d62f5d - (HEAD -> master) Revert "exclude config IntelliJ" (25 seconds ago) <Romain Bohdanowicz>
+* a3d9926 - TEST (43 minutes ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (2 hours ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (22 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (22 hours ago) <Romain Bohdanowicz>
+* 917486b - description (22 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (22 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (25 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git rebase -i
+error: cannot rebase: You have unstaged changes.
+error: Please commit or stash them.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git rebase -i
+[detached HEAD faf5d2d] test
+ Date: Fri Oct 16 10:02:27 2020 +0200
+ 1 file changed, 3 insertions(+)
+ create mode 100644 TEST
+Successfully rebased and updated refs/heads/master.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* f7e9195 - (HEAD -> master) Revert "exclude config IntelliJ" (10 seconds ago) <Romain Bohdanowicz>
+* faf5d2d - test (17 seconds ago) <Romain Bohdanowicz>
+* e3dd0f5 - ma fonctionnalité (2 hours ago) <Romain Bohdanowicz>
+* 8a3ff99 - option --version (2 hours ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (19 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (22 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (22 hours ago) <Romain Bohdanowicz>
+* 917486b - description (22 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (22 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (23 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (23 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (25 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout 
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git checkout HEAD^
+Note: switching to 'HEAD^'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at faf5d2d test
+➜  Formation_Git_SopraSteria_2020_10_15 git:(faf5d2d) git checkout master  
+Previous HEAD position was faf5d2d test
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git rebase -i       
+Successfully rebased and updated refs/heads/master.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git rebase -i
+[detached HEAD c8032e3] test + ma fonctionnalité
+ Date: Fri Oct 16 10:02:27 2020 +0200
+ 2 files changed, 8 insertions(+)
+ create mode 100644 TEST
+Successfully rebased and updated refs/heads/master.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git rebase -i
+Successfully rebased and updated refs/heads/master.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git show
+commit 9040d5884e5d2264bc853e5c984f1713e446f9eb (HEAD -> master)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Fri Oct 16 10:02:27 2020 +0200
+
+    test + ma fonctionnalité
+
+diff --git a/.gitignore b/.gitignore
+index 0497660..397b4a7 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,2 +1 @@
+ *.log
+-.idea
+diff --git a/README.md b/README.md
+index e0d43d3..75e4562 100644
+--- a/README.md
++++ b/README.md
+@@ -10,3 +10,8 @@ Formation Sopra Steria du 15/10/2020
+ - `git help`
+ - `git add`
+ - `git commit`
++
++
++dfgfdgd jsfgd
++
++fgssffsgs
+\ No newline at end of file
+diff --git a/TEST b/TEST
+new file mode 100644
+index 0000000..0c2eaba
+--- /dev/null
++++ b/TEST
+@@ -0,0 +1,3 @@
++# TEST
++
++dhjdgh
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git rebase -i
+Successfully rebased and updated refs/heads/master.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) [27308:64627:1016/140429.613526:ERROR:database.cc(1698)] AppCache sqlite error 2067, errno 0: UNIQUE constraint failed: Groups.manifest_url, sql: INSERT INTO Groups  (group_id, origin, manifest_url, creation_time, last_access_time,   last_full_update_check_time, first_evictable_error_time,   token_expires)  VALUES(?, ?, ?, ?, ?, ?, ?, ?)
+[27308:64627:1016/140430.259708:ERROR:database.cc(1698)] AppCache sqlite error 2067, errno 0: UNIQUE constraint failed: Groups.manifest_url, sql: INSERT INTO Groups  (group_id, origin, manifest_url, creation_time, last_access_time,   last_full_update_check_time, first_evictable_error_time,   token_expires)  VALUES(?, ?, ?, ?, ?, ?, ?, ?)
+[27308:64627:1016/140430.429954:ERROR:database.cc(1698)] AppCache sqlite error 2067, errno 0: UNIQUE constraint failed: Groups.manifest_url, sql: INSERT INTO Groups  (group_id, origin, manifest_url, creation_time, last_access_time,   last_full_update_check_time, first_evictable_error_time,   token_expires)  VALUES(?, ?, ?, ?, ?, ?, ?, ?)
+[27308:64627:1016/140430.536056:ERROR:database.cc(1698)] AppCache sqlite error 2067, errno 0: UNIQUE constraint failed: Groups.manifest_url, sql: INSERT INTO Groups  (group_id, origin, manifest_url, creation_time, last_access_time,   last_full_update_check_time, first_evictable_error_time,   token_expires)  VALUES(?, ?, ?, ?, ?, ?, ?, ?)
+[27308:64627:1016/140430.634619:ERROR:database.cc(1698)] AppCache sqlite error 2067, errno 0: UNIQUE constraint failed: Groups.manifest_url, sql: INSERT INTO Groups  (group_id, origin, manifest_url, creation_time, last_access_time,   last_full_update_check_time, first_evictable_error_time,   token_expires)  VALUES(?, ?, ?, ?, ?, ?, ?, ?)
+[27308:64627:1016/140430.809339:ERROR:database.cc(1698)] AppCache sqlite error 2067, errno 0: UNIQUE constraint failed: Groups.manifest_url, sql: INSERT INTO Groups  (group_id, origin, manifest_url, creation_time, last_access_time,   last_full_update_check_time, first_evictable_error_time,   token_expires)  VALUES(?, ?, ?, ?, ?, ?, ?, ?)
+[27308:64627:1016/140430.873101:ERROR:database.cc(1698)] AppCache sqlite error 2067, errno 0: UNIQUE constraint failed: Groups.manifest_url, sql: INSERT INTO Groups  (group_id, origin, manifest_url, creation_time, last_access_time,   last_full_update_check_time, first_evictable_error_time,   token_expires)  VALUES(?, ?, ?, ?, ?, ?, ?, ?)
+[27308:64627:1016/140430.984314:ERROR:database.cc(1698)] AppCache sqlite error 2067, errno 0: UNIQUE constraint failed: Groups.manifest_url, sql: INSERT INTO Groups  (group_id, origin, manifest_url, creation_time, last_access_time,   last_full_update_check_time, first_evictable_error_time,   token_expires)  VALUES(?, ?, ?, ?, ?, ?, ?, ?)
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* 82cc431 - (HEAD -> master) correction exercice (31 seconds ago) <Romain Bohdanowicz>
+* 0b899c5 - exclude config IntelliJ (31 seconds ago) <Romain Bohdanowicz>
+* 5e5e71a - commandes basiques (31 seconds ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (27 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (27 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (28 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git rebase -i --root
+[detached HEAD b2ebcfd] docs: slides
+ Date: Thu Oct 15 11:01:59 2020 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git.pdf
+Successfully rebased and updated refs/heads/master.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git rebase -i --root
+[detached HEAD aedf4f5] chore: .gitignore
+ Date: Thu Oct 15 12:26:38 2020 +0200
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+[detached HEAD ac38116] chore: versionne le dossier logs
+ Date: Thu Oct 15 12:30:18 2020 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 logs/.gitkeep
+[detached HEAD 135829f] docs: commandes basiques
+ Date: Thu Oct 15 13:59:21 2020 +0200
+ 1 file changed, 12 insertions(+)
+ create mode 100644 README.md
+[detached HEAD 2395e57] chore: exclude config IntelliJ
+ Date: Thu Oct 15 14:11:59 2020 +0200
+ 1 file changed, 1 insertion(+)
+[detached HEAD aca2b0e] feat: correction exercice
+ Date: Thu Oct 15 16:28:55 2020 +0200
+ 1 file changed, 476 insertions(+)
+ create mode 100644 exercice-commit.output
+Successfully rebased and updated refs/heads/master.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git rebase -i --root
+Successfully rebased and updated refs/heads/master.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg              
+* c84d79f - (HEAD -> master) feat: correction exercice (2 seconds ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 seconds ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 seconds ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 seconds ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (46 seconds ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --amm
+fatal: unrecognized argument: --amm
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+* c84d79f - (HEAD -> master) feat: correction exercice (13 seconds ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (13 seconds ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (13 seconds ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (13 seconds ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (57 seconds ago) <Romain Bohdanowicz>
+* a43497c - (origin/master) correction exercice (23 hours ago) <Romain Bohdanowicz>
+* 6e70224 - exclude config IntelliJ (25 hours ago) <Romain Bohdanowicz>
+* 7984ede - suite des commandes (25 hours ago) <Romain Bohdanowicz>
+* 917486b - description (25 hours ago) <Romain Bohdanowicz>
+* 562cc44 - commandes basiques (25 hours ago) <Romain Bohdanowicz>
+* 463a9a6 - versionne le dossier logs (27 hours ago) <Romain Bohdanowicz>
+* 7f35093 - .gitignore (27 hours ago) <Romain Bohdanowicz>
+* d210353 - slides (28 hours ago) <Romain Bohdanowicz>%                                           
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git push
+To https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git push --force
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (16/16), 4.07 MiB | 3.31 MiB/s, done.
+Total 16 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git
+ + a43497c...c84d79f master -> master (forced update)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* c84d79f - (HEAD -> master, origin/master) feat: correction exercice (83 seconds ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (83 seconds ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (83 seconds ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (83 seconds ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 minutes ago) <Romain Bohdanowicz>%                                    
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git switch -c feat/form-contact
+Switched to a new branch 'feat/form-contact'
+➜  Formation_Git_SopraSteria_2020_10_15 git:(feat/form-contact) ✗ git add contact/contact.html 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(feat/form-contact) ✗ git commit -m "feat: contact form html"
+[feat/form-contact 4c7a360] feat: contact form html
+ 1 file changed, 21 insertions(+)
+ create mode 100644 contact/contact.html
+➜  Formation_Git_SopraSteria_2020_10_15 git:(feat/form-contact) ✗ git add contact/send-mail.php 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(feat/form-contact) ✗ git commit -m "feat: send email php" 
+[feat/form-contact f8071e0] feat: send email php
+ 1 file changed, 2 insertions(+)
+ create mode 100644 contact/send-mail.php
+➜  Formation_Git_SopraSteria_2020_10_15 git:(feat/form-contact) git lg --all
+* f8071e0 - (HEAD -> feat/form-contact) feat: send email php (13 seconds ago) <Romain Bohdanowicz>
+* 4c7a360 - feat: contact form html (26 seconds ago) <Romain Bohdanowicz>
+* c84d79f - (origin/master, master) feat: correction exercice (4 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (4 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (4 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (4 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (5 minutes ago) <Romain Bohdanowicz>%                                    
+➜  Formation_Git_SopraSteria_2020_10_15 git:(feat/form-contact) git status         
+On branch feat/form-contact
+nothing to commit, working tree clean
+➜  Formation_Git_SopraSteria_2020_10_15 git:(feat/form-contact) git switch master  
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git merge --ff-only feat/form-contact  
+Updating c84d79f..f8071e0
+Fast-forward
+ contact/contact.html  | 21 +++++++++++++++++++++
+ contact/send-mail.php |  2 ++
+ 2 files changed, 23 insertions(+)
+ create mode 100644 contact/contact.html
+ create mode 100644 contact/send-mail.php
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all                          
+* f8071e0 - (HEAD -> master, feat/form-contact) feat: send email php (3 minutes ago) <Romain Bohdanowicz>
+* 4c7a360 - feat: contact form html (3 minutes ago) <Romain Bohdanowicz>
+* c84d79f - (origin/master) feat: correction exercice (7 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (7 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (7 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (7 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (7 minutes ago) <Romain Bohdanowicz>%                                    
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all                          
+* f8071e0 - (HEAD -> master, feat/form-contact) feat: send email php (4 minutes ago) <Romain Bohdanowicz>
+* 4c7a360 - feat: contact form html (5 minutes ago) <Romain Bohdanowicz>
+* c84d79f - (origin/master) feat: correction exercice (8 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (8 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (8 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (8 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (9 minutes ago) <Romain Bohdanowicz>%                                    
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset --hard origin/master  
+HEAD is now at c84d79f feat: correction exercice
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all                   
+* f8071e0 - (feat/form-contact) feat: send email php (5 minutes ago) <Romain Bohdanowicz>
+* 4c7a360 - feat: contact form html (5 minutes ago) <Romain Bohdanowicz>
+* c84d79f - (HEAD -> master, origin/master) feat: correction exercice (9 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (9 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (9 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (9 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (10 minutes ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git merge --no-ff feat/form-contact 
+Merge made by the 'recursive' strategy.
+ contact/contact.html  | 21 +++++++++++++++++++++
+ contact/send-mail.php |  2 ++
+ 2 files changed, 23 insertions(+)
+ create mode 100644 contact/contact.html
+ create mode 100644 contact/send-mail.php
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all                        
+*   923d42d - (HEAD -> master) Merge branch 'feat/form-contact' (9 seconds ago) <Romain Bohdanowicz>
+|\  
+| * f8071e0 - (feat/form-contact) feat: send email php (6 minutes ago) <Romain Bohdanowicz>
+| * 4c7a360 - feat: contact form html (6 minutes ago) <Romain Bohdanowicz>
+|/  
+* c84d79f - (origin/master) feat: correction exercice (10 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (10 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (10 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (10 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (10 minutes ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git reset --hard origin/master      
+HEAD is now at c84d79f feat: correction exercice
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all                   
+* f8071e0 - (feat/form-contact) feat: send email php (7 minutes ago) <Romain Bohdanowicz>
+* 4c7a360 - feat: contact form html (8 minutes ago) <Romain Bohdanowicz>
+* c84d79f - (HEAD -> master, origin/master) feat: correction exercice (11 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (11 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (11 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (11 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (12 minutes ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git merge --ff-only --squash feat/form-contact 
+Updating c84d79f..f8071e0
+Fast-forward
+Squash commit -- not updating HEAD
+ contact/contact.html  | 21 +++++++++++++++++++++
+ contact/send-mail.php |  2 ++
+ 2 files changed, 23 insertions(+)
+ create mode 100644 contact/contact.html
+ create mode 100644 contact/send-mail.php
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   contact/contact.html
+        new file:   contact/send-mail.php
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "feat: contact form"
+[master 7796edd] feat: contact form
+ 2 files changed, 23 insertions(+)
+ create mode 100644 contact/contact.html
+ create mode 100644 contact/send-mail.php
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all* 7796edd - (HEAD -> master) feat: contact form (4 seconds ago) <Romain Bohdanowicz>
+| * f8071e0 - (feat/form-contact) feat: send email php (9 minutes ago) <Romain Bohdanowicz>
+| * 4c7a360 - feat: contact form html (9 minutes ago) <Romain Bohdanowicz>
+|/  
+* c84d79f - (origin/master) feat: correction exercice (13 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (13 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (13 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (13 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (14 minutes ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git branch -d feat/form-contact  
+error: The branch 'feat/form-contact' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D feat/form-contact'.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git branch -D feat/form-contact 
+Deleted branch feat/form-contact (was f8071e0).
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all                    
+* 7796edd - (HEAD -> master) feat: contact form (60 minutes ago) <Romain Bohdanowicz>
+* c84d79f - (origin/master) feat: correction exercice (73 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (73 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (73 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (73 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (74 minutes ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git show
+commit 7796edd4ef932b57dbf00de6a6c7f3f865a94a63 (HEAD -> master)
+Author: Romain Bohdanowicz <romain.bohdanowicz@gmail.com>
+Date:   Fri Oct 16 15:28:53 2020 +0200
+
+    feat: contact form
+
+diff --git a/contact/contact.html b/contact/contact.html
+new file mode 100644
+index 0000000..cbf0092
+--- /dev/null
++++ b/contact/contact.html
+@@ -0,0 +1,21 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Document</title>
++</head>
++<body>
++  <form action="send-mail.php" method="post">
++    <div>
++      Sujet : <input>
++    </div>
++    <div>
++      Message : <textarea></textarea>
++    </div>
++    <div>
++      <button>Envoyer</button>
++    </div>
++  </form>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/contact/send-mail.php b/contact/send-mail.php
+new file mode 100644
+index 0000000..7eadcfb
+--- /dev/null
++++ b/contact/send-mail.php
+@@ -0,0 +1,2 @@
++<?php
++mail($_POST['sujet'], $_POST['message']);
+\ No newline at end of file
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 663 bytes | 663.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git
+   c84d79f..7796edd  master -> master
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add tic-tac-toe.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "grille"
+[master ec81138] grille
+ 1 file changed, 5 insertions(+)
+ create mode 100644 tic-tac-toe.md
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git
+   7796edd..ec81138  master -> master
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git pull
+Already up to date.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+* ec81138 - (HEAD -> master, origin/master) grille (9 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (72 minutes ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (85 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (85 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (85 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (85 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (85 minutes ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+* ec81138 - (HEAD -> master, origin/master) grille (9 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (72 minutes ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (85 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (85 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (85 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (85 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (86 minutes ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15
+   ec81138..c4ddc4b  master     -> origin/master
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+* c4ddc4b - (origin/master) first move (8 minutes ago) <Luc FULLENWARTH>
+* ec81138 - (HEAD -> master) grille (10 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (73 minutes ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (86 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (86 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (86 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (86 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (87 minutes ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git merge --ff-only origin/master  
+Updating ec81138..c4ddc4b
+Fast-forward
+ tic-tac-toe.md | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all                      
+* c4ddc4b - (HEAD -> master, origin/master) first move (9 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (11 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (74 minutes ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (87 minutes ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (87 minutes ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (87 minutes ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (87 minutes ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (87 minutes ago) <Romain Bohdanowicz>%                                   
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git pull
+Already up to date.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git merge --ff origin/master  
+Already up to date.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git add tic-tac-toe.md tic-tac-toe.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "tour 1 romain"
+[master 4603557] tour 1 romain
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 290 bytes | 290.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git
+   c4ddc4b..4603557  master -> master
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git add tic-tac-toe.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "tour 2 romain"
+[master c752aed] tour 2 romain
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git push
+To https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15
+   4603557..287520f  master     -> origin/master
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg
+* c752aed - (HEAD -> master) tour 2 romain (2 minutes ago) <Romain Bohdanowicz>
+* 4603557 - tour 1 romain (4 minutes ago) <Romain Bohdanowicz>
+* c4ddc4b - first move (14 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (16 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (79 minutes ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (2 hours ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 hours ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 hours ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 hours ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 hours ago) <Romain Bohdanowicz>%                                      
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all     
+* 287520f - (origin/master) 2e coup Luc (2 minutes ago) <Luc FULLENWARTH>
+| * c752aed - (HEAD -> master) tour 2 romain (2 minutes ago) <Romain Bohdanowicz>
+|/  
+* 4603557 - tour 1 romain (4 minutes ago) <Romain Bohdanowicz>
+* c4ddc4b - first move (15 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (16 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (80 minutes ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (2 hours ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 hours ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 hours ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 hours ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 hours ago) <Romain Bohdanowicz>%                                      
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git merge origin/master  
+Auto-merging tic-tac-toe.md
+CONFLICT (content): Merge conflict in tic-tac-toe.md
+Automatic merge failed; fix conflicts and then commit the result.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git add tic-tac-toe.md
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit
+[master 025f813] Merge remote-tracking branch 'origin/master'
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+*   025f813 - (HEAD -> master) Merge remote-tracking branch 'origin/master' (9 seconds ago) <Romain Bohdanowicz>
+|\  
+| * 287520f - (origin/master) 2e coup Luc (3 minutes ago) <Luc FULLENWARTH>
+* | c752aed - tour 2 romain (4 minutes ago) <Romain Bohdanowicz>
+|/  
+* 4603557 - tour 1 romain (5 minutes ago) <Romain Bohdanowicz>
+* c4ddc4b - first move (16 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (18 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (81 minutes ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (2 hours ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 hours ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 hours ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 hours ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 hours ago) <Romain Bohdanowicz>%                                      
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git fetch
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git merge --ff origin/master  
+Already up to date.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git pull
+Already up to date.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git rebase origin/master  
+First, rewinding head to replay your work on top of it...
+Applying: tour 2 romain
+Using index info to reconstruct a base tree...
+M       tic-tac-toe.md
+Falling back to patching base and 3-way merge...
+Auto-merging tic-tac-toe.md
+CONFLICT (content): Merge conflict in tic-tac-toe.md
+error: Failed to merge in the changes.
+Patch failed at 0001 tour 2 romain
+hint: Use 'git am --show-current-patch' to see the failed patch
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+➜  Formation_Git_SopraSteria_2020_10_15 git:(287520f) ✗ git rebase --continue
+tic-tac-toe.md: needs merge
+You must edit all merge conflicts and then
+mark them as resolved using git add
+➜  Formation_Git_SopraSteria_2020_10_15 git:(287520f) ✗ git ad 
+README.md               exercice-commit.output  logs/                                         
+contact/                git.pdf                 tic-tac-toe.md                                
+➜  Formation_Git_SopraSteria_2020_10_15 git:(287520f) ✗ git add tic-tac-toe.md
+➜  Formation_Git_SopraSteria_2020_10_15 git:(287520f) ✗ git rebase --continue
+Applying: tour 2 romain
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+* 50bcbfa - (HEAD -> master) tour 2 romain (6 seconds ago) <Romain Bohdanowicz>
+* 287520f - (origin/master) 2e coup Luc (9 minutes ago) <Luc FULLENWARTH>
+* 4603557 - tour 1 romain (11 minutes ago) <Romain Bohdanowicz>
+* c4ddc4b - first move (22 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (23 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (87 minutes ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (2 hours ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 hours ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 hours ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 hours ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 hours ago) <Romain Bohdanowicz>%                                      
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git
+   287520f..50bcbfa  master -> master
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git push
+Everything up-to-date
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git add README.md 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git commit -m "docs: workflow"
+[master da3afc6] docs: workflow
+ 1 file changed, 2 insertions(+)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 328 bytes | 328.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: error: GH006: Protected branch update failed for refs/heads/master.
+remote: error: At least 1 approving review is required by reviewers with write access.
+To https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git
+ ! [remote rejected] master -> master (protected branch hook declined)
+error: failed to push some refs to 'https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git'
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git switch -c docs/workflow
+Switched to a new branch 'docs/workflow'
+➜  Formation_Git_SopraSteria_2020_10_15 git:(4f879c7) git switch master  
+Previous HEAD position was 4f879c7 3e coup
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 3), reused 2 (delta 2), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15
+   50bcbfa..197382e  master        -> origin/master
+   4f879c7..f352233  fin/de-partie -> origin/fin/de-partie
+hint: Waiting for your editor to close the file... ^C
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ 
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git lg
+* da3afc6 - (HEAD -> master, docs/workflow) docs: workflow (17 minutes ago) <Romain Bohdanowicz>
+* 50bcbfa - tour 2 romain (23 minutes ago) <Romain Bohdanowicz>
+* 287520f - 2e coup Luc (32 minutes ago) <Luc FULLENWARTH>
+* 4603557 - tour 1 romain (34 minutes ago) <Romain Bohdanowicz>
+* c4ddc4b - first move (45 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (47 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (2 hours ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (2 hours ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 hours ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 hours ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 hours ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 hours ago) <Romain Bohdanowicz>%                                      
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) ✗ git reset HEAD^ --hard
+HEAD is now at 50bcbfa tour 2 romain
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git pull
+Updating 50bcbfa..197382e
+Fast-forward
+ tic-tac-toe.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git pull
+Already up to date.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all  
+* 197382e - (HEAD -> master, origin/master) 3e coup (#1) (3 minutes ago) <Luc FULLENWARTH>
+| * f352233 - (origin/fin/de-partie) 4e coup (6 minutes ago) <Luc FULLENWARTH>
+| * 4f879c7 - 3e coup (15 minutes ago) <Luc FULLENWARTH>
+|/  
+| * da3afc6 - (docs/workflow) docs: workflow (18 minutes ago) <Romain Bohdanowicz>
+|/  
+* 50bcbfa - tour 2 romain (25 minutes ago) <Romain Bohdanowicz>
+* 287520f - 2e coup Luc (33 minutes ago) <Luc FULLENWARTH>
+* 4603557 - tour 1 romain (35 minutes ago) <Romain Bohdanowicz>
+* c4ddc4b - first move (46 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (48 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (2 hours ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (2 hours ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 hours ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 hours ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 hours ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 hours ago) <Romain Bohdanowicz>%                                      
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git fetch --all --prune
+Fetching origin
+From https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15
+ - [deleted]         (none)     -> origin/fin/de-partie
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git lg --all
+* 197382e - (HEAD -> master, origin/master) 3e coup (#1) (4 minutes ago) <Luc FULLENWARTH>
+| * da3afc6 - (docs/workflow) docs: workflow (20 minutes ago) <Romain Bohdanowicz>
+|/  
+* 50bcbfa - tour 2 romain (26 minutes ago) <Romain Bohdanowicz>
+* 287520f - 2e coup Luc (35 minutes ago) <Luc FULLENWARTH>
+* 4603557 - tour 1 romain (37 minutes ago) <Romain Bohdanowicz>
+* c4ddc4b - first move (48 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (49 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (2 hours ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (2 hours ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 hours ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 hours ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 hours ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 hours ago) <Romain Bohdanowicz>%                                      
+➜  Formation_Git_SopraSteria_2020_10_15 git:(master) git switch docs/workflow  
+Switched to branch 'docs/workflow'
+➜  Formation_Git_SopraSteria_2020_10_15 git:(docs/workflow) git lg --all
+* 197382e - (origin/master, master) 3e coup (#1) (4 minutes ago) <Luc FULLENWARTH>
+| * da3afc6 - (HEAD -> docs/workflow) docs: workflow (20 minutes ago) <Romain Bohdanowicz>
+|/  
+* 50bcbfa - tour 2 romain (26 minutes ago) <Romain Bohdanowicz>
+* 287520f - 2e coup Luc (35 minutes ago) <Luc FULLENWARTH>
+* 4603557 - tour 1 romain (37 minutes ago) <Romain Bohdanowicz>
+* c4ddc4b - first move (48 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (50 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (2 hours ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (2 hours ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 hours ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 hours ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 hours ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 hours ago) <Romain Bohdanowicz>%                                      
+➜  Formation_Git_SopraSteria_2020_10_15 git:(docs/workflow) git rebase master  
+First, rewinding head to replay your work on top of it...
+Applying: docs: workflow
+➜  Formation_Git_SopraSteria_2020_10_15 git:(docs/workflow) git lg --all
+* 771462a - (HEAD -> docs/workflow) docs: workflow (3 seconds ago) <Romain Bohdanowicz>
+* 197382e - (origin/master, master) 3e coup (#1) (5 minutes ago) <Luc FULLENWARTH>
+* 50bcbfa - tour 2 romain (27 minutes ago) <Romain Bohdanowicz>
+* 287520f - 2e coup Luc (36 minutes ago) <Luc FULLENWARTH>
+* 4603557 - tour 1 romain (37 minutes ago) <Romain Bohdanowicz>
+* c4ddc4b - first move (48 minutes ago) <Luc FULLENWARTH>
+* ec81138 - grille (50 minutes ago) <Romain Bohdanowicz>
+* 7796edd - feat: contact form (2 hours ago) <Romain Bohdanowicz>
+* c84d79f - feat: correction exercice (2 hours ago) <Romain Bohdanowicz>
+* 0bbd322 - docs: commandes basiques (2 hours ago) <Romain Bohdanowicz>
+* d1c9b21 - chore: versionne le dossier logs (2 hours ago) <Romain Bohdanowicz>
+* c8fe467 - chore: .gitignore (2 hours ago) <Romain Bohdanowicz>
+* b2ebcfd - docs: slides (2 hours ago) <Romain Bohdanowicz>%                                      
+➜  Formation_Git_SopraSteria_2020_10_15 git:(docs/workflow) git push
+fatal: The current branch docs/workflow has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin docs/workflow
+
+➜  Formation_Git_SopraSteria_2020_10_15 git:(docs/workflow) git push --set-upstream origin docs/workflow
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'docs/workflow' on GitHub by visiting:
+remote:      https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15/pull/new/docs/workflow
+remote: 
+To https://github.com/bioub/Formation_Git_SopraSteria_2020_10_15.git
+ * [new branch]      docs/workflow -> docs/workflow
+Branch 'docs/workflow' set up to track remote branch 'docs/workflow' from 'origin'.
+➜  Formation_Git_SopraSteria_2020_10_15 git:(docs/workflow) 
